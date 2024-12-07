@@ -6,7 +6,6 @@ from .heap import BinaryMinHeap
 from .bst import BinarySearchTree
 from .avl import AVLTree
 from .union_find import UnionFind
-from .trie import Trie
 
 __all__ = [
     "SinglyLinkedList",
@@ -19,5 +18,4 @@ __all__ = [
     "BinarySearchTree",
     "AVLTree",
     "UnionFind",
-    "Trie",
 ]

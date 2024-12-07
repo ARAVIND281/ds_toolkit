@@ -91,7 +91,13 @@ class AVLTree:
 
     def delete(self, value):
         """Delete a value from the AVL tree."""
+        if self.is_empty():
+            raise Exception("Cannot delete from an empty tree")
         self.root = self._delete(self.root, value)
+    
+    def is_empty(self):
+        return self.root is None
+
 
     def _delete(self, node, value):
         """Recursive function to delete a value."""
